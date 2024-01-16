@@ -1,21 +1,21 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+ <div id='app'>
+    Hello World!
+ </div>
 </template>
 
-<style scoped>
+<script setup>
+  import { onMounted, ref } from 'vue';
+  import { db } from './firebase';
+  import { collection, doc, getDocs } from 'firebase/firestore';
 
-</style>
+  const docPath = 'clients/daniel';
+  // firebaseData = '';
+
+  onMounted(async () => {
+    const firebaseData = await getDocs(collection(db, 'clients'));
+    firebaseData.forEach((doc) => {
+      console.log(doc.id, '=>', doc.data());
+    });
+  })
+</script>
