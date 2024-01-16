@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "create-vue": "^3.9.1",
+    "vue": "^3.4.14"
+  }
+}
