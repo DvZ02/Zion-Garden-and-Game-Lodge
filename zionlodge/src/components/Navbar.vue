@@ -1,37 +1,47 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img id="nav-logo" src="../assets/logo.svg" alt="Logo" width="70%" height="auto" class="d-inline-block align-text-top">
-        </a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ACCOMODATION</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">GALLERY</a>
-          </li>
-        </ul>
+  <header class="bg-white">
+    <nav class="flex justify-between items-center w-[92%] mx-auto">
+      <div>
+        <img class="w-36" id="nav-logo" src="../assets/logo.svg" alt="...">
       </div>
-  </nav>
+      <div class="md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[6vw] gap-8">
+            <li>
+              <a class="hover:text-gray-500" href="#">HOME</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">ACCOMODATION</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">ABOUT US</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">CONTACT US</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">GALLERY</a>
+            </li>
+          </ul>
+      </div>
+      <div class="flex items-center gap-6">
+        <ion-icon onclick="toggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+    </nav>
+  </header>
 </template>
 
 <script>
+
+function toggleMenu(e){
+  e.name = e.name === 'menu' ? 'close' : 'menu';
+}
+
 export default {
   name: 'NavBar',
 }
 </script>
 
-<style>
+<!-- <style>
   .navbar-brand{
     margin-left: 5%;  
     width: 20%;
@@ -51,4 +61,4 @@ export default {
   font-size: xx-large;
   margin-left: 5%;
  }
-</style>
+</style> -->
