@@ -4,7 +4,11 @@ export default {
   darkMode: false,
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        ziongreen: '#9BA78B',
+      },
+    },
   },
   variants: {
     extend: {},
