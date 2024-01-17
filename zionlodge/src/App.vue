@@ -7,7 +7,7 @@
         </a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
+            <a class="nav-link active" href="#">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">ACCOMODATION</a>
@@ -32,7 +32,6 @@
   import { db } from './firebase';
   import { collection, doc, getDocs } from 'firebase/firestore';
 
-  const docPath = 'clients/daniel';
   // firebaseData = '';
 
   onMounted(async () => {
@@ -42,3 +41,25 @@
     });
   })
 </script>
+
+<style>
+  .navbar-brand{
+    margin-left: 5%;  
+    width: 20%;
+  }
+
+
+  .navbar-nav{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+
+ .nav-item {
+  /* width: 100%; */
+  font-size: xx-large;
+  margin-left: 5%;
+ }
+</style>
