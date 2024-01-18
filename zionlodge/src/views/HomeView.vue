@@ -1,6 +1,6 @@
 <template>
-    <div class="flex items-center justify-center p-6">
-        <h1 class="md:text-[40px] text-[2svh] items-centerfont-bold font-title">Zion Garden & Game Lodge</h1>
+    <div class="flex items-center justify-center p-10">
+        <h1 class="md:text-[44px] text-[2svh] items-centerfont-bold font-title">Zion Garden & Game Lodge</h1>
     </div>
 
     <div class="flex items-center justify-center">
