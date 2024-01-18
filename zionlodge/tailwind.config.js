@@ -10,6 +10,7 @@ export default {
       },
       fontFamily:{
         title: ['Eagle Lake'],
+        body: ['Darker Grotesque']
       },
     },
   },
