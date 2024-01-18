@@ -8,6 +8,9 @@ export default {
       colors: {
         ziongreen: '#9BA78B',
       },
+      fontFamily:{
+        title: ['Eagle Lake'],
+      },
     },
   },
   variants: {
