@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         ziongreen: '#9BA78B',
+        buttonface: '#D9D9D9'
       },
       fontFamily:{
         title: ['Eagle Lake'],
