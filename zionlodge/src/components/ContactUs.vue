@@ -9,10 +9,10 @@
             <div class="col">
                 <div class="container">
                     <div class="row">
-                        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-12" id="..." src="../assets/sunset_1.jpg" alt="...">
+                        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-12" src="../assets/sunset_1.jpg" alt="...">
                     </div>
                     <div class="row">
-                        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-3" id="..." src="../assets/roos_1.png" alt="...">
+                        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-3" src="../assets/roos_1.png" alt="...">
                     </div>
                 </div>
             </div>
@@ -41,10 +41,10 @@
             <div class="col">
                 <div class="container">
                     <div class="row">
-                        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-12" id="..." src="../assets/deck_view_1.jpg" alt="...">
+                        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-12" src="../assets/deck_view_1.jpg" alt="...">
                     </div>
                     <div class="row">
-                        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-3" id="..." src="../assets/sunset_2.jpg" alt="...">
+                        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-3" src="../assets/sunset_2.jpg" alt="...">
                     </div>
                 </div>
             </div>
