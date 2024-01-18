@@ -1,5 +1,8 @@
 <template>
-  <NavBar/>
+  <header class="bg-white">
+    <NavBar/>
+  </header>
+  <RouterView/>
 </template>
 
 <script setup>
