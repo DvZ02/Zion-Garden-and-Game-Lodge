@@ -21,8 +21,10 @@
             The Lodge offers accommodation in unique rock-art chalets near a sparkling swimming pool and can accommodate groups of up to twenty guests at a time, sharing a fully equipped, communal self-catering kitchen. <br/><br/>
         </p>
     </div>
+    <ContactUs/>
 </template>
 
 <script setup>
+    import ContactUs from '../components/ContactUs.vue'
     import { ref } from 'vue';
 </script>
