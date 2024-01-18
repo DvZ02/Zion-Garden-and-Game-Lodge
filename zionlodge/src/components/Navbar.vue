@@ -44,7 +44,7 @@
 </script>
 
 <style>
- .active{
-    color: blue;
- }
+  nav a.router-link-exact-active {
+    color: blue
+  }
 </style>
