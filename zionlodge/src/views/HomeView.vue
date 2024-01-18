@@ -7,9 +7,3 @@
 <script setup>
     import { ref } from 'vue';
 </script>
-
-<script>
-  export default {
-    name: 'HomeComponent',
-  }
-</script>

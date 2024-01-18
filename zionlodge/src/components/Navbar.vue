@@ -5,11 +5,11 @@
       </div>
       <div class="duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
         <ul ref="navlinks"  class="flex md:flex-row flex-col md:items-center md:gap-[6vw] gap-8">
-          <RouterLink @click="setActicve(0)" class="hover:text-gray-500" to="/">HOME</RouterLink>
-          <RouterLink @click="setActicve(1)" class="hover:text-gray-500" to="/accomodation">ACCOMODATION</RouterLink>
-          <RouterLink @click="setActicve(2)" class="hover:text-gray-500" to="/">ABOUT US</RouterLink>
-          <RouterLink @click="setActicve(3)" class="hover:text-gray-500" to="/">CONTACT US</RouterLink>
-          <RouterLink @click="setActicve(4)" class="hover:text-gray-500" to="/">GALLERY</RouterLink>
+          <RouterLink class="hover:text-gray-500" to="/">HOME</RouterLink>
+          <RouterLink class="hover:text-gray-500" to="/accomodation">ACCOMODATION</RouterLink>
+          <RouterLink class="hover:text-gray-500" to="/about">ABOUT US</RouterLink>
+          <RouterLink class="hover:text-gray-500" to="/contact">CONTACT US</RouterLink>
+          <RouterLink class="hover:text-gray-500" to="/gallery">GALLERY</RouterLink>
         </ul>
       </div>
       <div class="flex items-center gap-6">
@@ -21,19 +21,12 @@
 <script setup>
   import { ref } from 'vue';
 
-  const navlinks = ref(null) ;
   const menuicon = ref(null) ;
 
   const toggleMenu = () => {
     menuicon.value.name = menuicon.value.name === 'menu' ? 'close' : 'menu';
     navlinks.value.c
     lassList.toggle('top-[9%]');
-  }
-
-  const setActicve = (index) => {
-    console.log(index);
-    console.log(navlinks.value.children[index]);
-    navlinks.value.children[index].classList.toggle('active');
   }
 </script>
 

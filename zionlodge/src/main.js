@@ -1,14 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import  HomeComponent  from './components/Home.vue'
-import  AccomodationComponent  from './components/Accomodation.vue'
+import  HomeView  from './views/HomeView.vue'
+import  AccomodationView  from './views/AccomodationView.vue'
 
 import './index.css'
 
 const routes = [
-    { path: '/', component: HomeComponent },
-    { path: '/accomodation', component: AccomodationComponent },
+    { path: '/', component: HomeView },
+    { path: '/accomodation', component: AccomodationView },
   ]
 
 const app = createApp(App);
