@@ -1,7 +1,7 @@
 <template>
     <div v-if="colour" class="p-8 bg-ziongreen my-4 md:w-[100%] shadow-md rounded-2xl">
         <div class="flex items-center justify-center mb-4">
-            <h1 class="md:text-[40px] text-[2svh] items-center font-title">{{ title }}</h1>
+            <h1 class="md:text-[36px] text-[2svh] items-center font-title">{{ title }}</h1>
         </div>
         <div>
             <div v-if="allignment" class="container">
@@ -28,7 +28,7 @@
     </div>
     <div v-else class="p-8 bg-white my-4 md:w-[100%] md:mx-5 inner-shadow rounded-2xl">
         <div class="flex items-center justify-center mb-4">
-            <h1 class="md:text-[40px] text-[2svh] items-center font-title">{{ title }}</h1>
+            <h1 class="md:text-[36px] text-[2svh] items-center font-title">{{ title }}</h1>
         </div>
         <div>
             <div v-if="allignment" class="container">
