@@ -1,7 +1,5 @@
 <template>
-    <div class="flex items-center justify-center p-10">
-        <h1 class="md:text-[44px] text-[2svh] items-centerfont-bold font-title">Zion Garden & Game Lodge</h1>
-    </div>
+    <TitleComponent title="Zion Garden & Game Lodge"/>
 
     <div class="flex items-center justify-center">
         <div class="bg-ziongreen w-[92%] md:h-[42svh] h-[40svh] shadow-xl rounded-2xl p-6">
@@ -26,5 +24,6 @@
 
 <script setup>
     import ContactUs from '../components/ContactUs.vue'
+    import TitleComponent from '../components/TitleComponent.vue'
     import { ref } from 'vue';
 </script>
