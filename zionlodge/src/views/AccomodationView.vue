@@ -1,5 +1,3 @@
 <template>
-    <div>
-        Welcome to Zion Lodge Accomodation
-    </div>
+    <h1 class="text-3xl">Communal Areas</h1>
 </template>

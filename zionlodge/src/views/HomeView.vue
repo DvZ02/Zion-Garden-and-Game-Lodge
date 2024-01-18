@@ -1,7 +1,5 @@
 <template>
-    <div>
-        Welcome to Zion Lodge
-    </div>
+    <h1 class="text-3xl">Zion Lodge Garden & Game Lodge</h1>
 </template>
 
 <script setup>
