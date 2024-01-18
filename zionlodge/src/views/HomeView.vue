@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="flex items-center justify-center">
-        <p class="font-body mx-auto text-center p-6 md:text-2xl text-[10px] w-[92%]">
+        <p class="font-body mx-auto text-center p-6 md:text-4xl text-[10px] md:w-[70%] w-[92%]">
             Our mission at Zion is to create the most beautiful space in God’s creation where He is invited to dwell daily so that our guests can relax, rest, feel spoiled and revived in His presence. <br/><br/>
             <span class="font-[1000]">God is inviting you to come away with Him! <br/><br/></span>
             We want to welcome anyone that is in full-time Christian ministry, to come and REST in God’s creation in the beautiful Waterberg of South Africa. Zion is a harbor of REST, connection, healing, restoration, renewal, calling and purpose. Our prayer is that those serving to help God’s Kingdom come in the hearts of people, can have their zeal, vision and passion re-ignited while spending time in Zion’s beautiful garden and Bushveld. <br/><br/>
