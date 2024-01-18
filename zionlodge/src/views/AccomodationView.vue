@@ -1,7 +1,7 @@
 <template>
     <TitleComponent title="Communal Areas"/>
-    <div class="container">
-        <div class="row">
+    <div class="container mb-12">
+        <div class="row -mx-[16%]">
             <div class="col">
                 <CardComponent title="Lapa" image="roos_1.png" 
                     text="The open kitchen overlooks the beautiful garden and bushveld and is fully equipped with all kitchen utensils, cutlery, and crockery for 20 guests,
@@ -15,7 +15,7 @@
                 The furniture gives a wonderful earthly feeling of leather and food and this area allows for all guests to cook, visit and eat together."/>                
             </div>
         </div>
-        <div class="row">
+        <div class="row -mx-[16%]">
             <div class="col">
                 <CardComponent title="Lapa" image="roos_1.png" :allignment="false"
                 text="The open kitchen overlooks the beautiful garden and bushveld and is fully equipped with all kitchen utensils, cutlery, and crockery for 20 guests,
