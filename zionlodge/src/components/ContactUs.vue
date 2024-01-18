@@ -19,7 +19,7 @@
             <div class="col-6">
                 <div class="bg-ziongreen md:h-[98%] h-[15svh] shadow-xl rounded-2xl md:mb-10 mb-8 font-body text-xl">
                     <div class="flex items-center justify-center p-6">
-                        <h1 class="md:text-[40px] text-[2svh] items-centerfont-bold font-title">Contact Us</h1>
+                        <h1 class="md:text-[40px] text-[2svh] items-center font-title">Contact Us</h1>
                     </div>
                     <div>
                         <div class="flex space-x-4">

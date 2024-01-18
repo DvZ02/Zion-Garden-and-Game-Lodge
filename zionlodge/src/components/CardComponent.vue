@@ -1,8 +1,30 @@
 <template>
-    <div class="flex items-center justify-center p-10 bg-ziongreen my-4 md:w-[45%] md:mx-5 shadow-xl rounded-2xl">
-        <h1 class="md:text-[40px] text-[2svh] items-center font-title">{{ title }}</h1>
-        <img class="md:w-[15svw] rounded-[7%] mx-auto mt-12" :src="require(`@/assets/${image}`)" alt="...">
-        <p>{{ text }}</p>
+    <div class=" p-8 bg-ziongreen my-4 md:w-[45%] md:mx-5 shadow-xl rounded-2xl">
+        <div class="flex items-center justify-center mb-4">
+            <h1 class="md:text-[40px] text-[2svh] items-center font-title">{{ title }}</h1>
+        </div>
+        <div>
+            <div v-if="allignment" class="container">
+                <div class="row">
+                    <div class="col">
+                        <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
+                    </div>
+                    <div class="col items-center justify-center flex">
+                        <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                    </div>                    
+                </div>
+            </div>   
+            <div v-else class="container">
+                <div class="row">
+                    <div class="col items-center justify-center flex">
+                        <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                    </div>  
+                    <div class="col">
+                        <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
+                    </div>                  
+                </div>
+            </div>           
+        </div>
     </div>
 </template>
 
@@ -21,6 +43,11 @@
         text: {
             type: String,
             require: true
+        },
+        allignment: {
+            type: Boolean,
+            require: false,
+            default: true
         }
     })
 </script>
