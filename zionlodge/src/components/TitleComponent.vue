@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center justify-center p-10">
-        <h1 class="md:text-[44px] text-[2svh] items-centerfont-bold font-title">{{ title }}</h1>
+        <h1 class="md:text-[48px] text-[2svh] items-centerfont-bold font-title">{{ title }}</h1>
     </div>
 </template>
 
