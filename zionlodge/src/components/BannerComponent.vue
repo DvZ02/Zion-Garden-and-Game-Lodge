@@ -2,7 +2,7 @@
             <div class="bg-ziongreen md:w-[85%] md:h-[44%] h-[40svh] shadow-xl rounded-2xl p-6 pt-12 overflow-hidden">
             <!-- Chaos Starts Here -->
             <div class="flex items-center justify-center max-w-6xl mx-auto px-6">
-                <div class="flex [&:hover>div]:w-[5svw] [&>div:hover]:w-[30rem]">
+                <div class="flex [&:hover>div]:w-[5svw] [&>div:hover]:w-[50svw]">
                     <div class="group relative h-[30svh] w-[3svw] overflow-hidden cursor-pointer transition-all duration-200">
                         <img class="h-full object-cover"  src="../assets/wildebees.jpg" alt="...">
                         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="group relative h-[30svh] w-[30rem] overflow-hidden cursor-pointer transition-all duration-200">
+                    <div class="group relative h-[30svh] w-[50svw] overflow-hidden cursor-pointer transition-all duration-200">
                         <img class="h-full object-cover "  src="../assets/lugfoto_2.jpg" alt="...">
                         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
                             <div class="absolute inset-x-5 bottom-6">
