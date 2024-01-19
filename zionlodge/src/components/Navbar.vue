@@ -1,10 +1,10 @@
 <template>
     <nav class="flex justify-between items-center w-[92%] mx-auto md:text-2xl">
       <div>
-        <img class="md:w-48 w-24" id="nav-logo" src="../assets/logo.svg" alt="...">
+        <img class="md:w-72 w-24" id="nav-logo" src="../assets/logo.svg" alt="...">
       </div>
       <div ref="navlinks" class="duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
-        <ul   class="flex md:flex-row flex-col md:items-center md:gap-[6vw] gap-8">
+        <ul   class="flex md:text-3xl md:flex-row flex-col md:items-center md:gap-[6vw] gap-8">
           <RouterLink class="hover:text-gray-500" to="/">HOME</RouterLink>
           <RouterLink class="hover:text-gray-500" to="/accomodation">ACCOMODATION</RouterLink>
           <RouterLink class="hover:text-gray-500" to="/about">ABOUT US</RouterLink>
