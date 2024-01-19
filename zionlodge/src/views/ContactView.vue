@@ -1,5 +1,7 @@
 <template>
-    <div>
-        Contact Us
-    </div>
+    <ContactUs/>
 </template>
+
+<script setup>
+    import ContactUs from '@/components/ContactUs.vue';
+</script>
