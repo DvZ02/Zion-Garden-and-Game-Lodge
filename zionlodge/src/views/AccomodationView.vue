@@ -31,7 +31,7 @@
         </div>
     </div>
     <TitleComponent title="Chalets"/>
-    <div class="container mb-12">
+    <div class="container">
         <div class="row -mx-[16%]">
             <div class="col">
                 <CardComponent title="Love" image="roos_1.png" :colour="false" 
@@ -63,6 +63,22 @@
             </div>
         </div>
     </div>
+    <div class="flex items-center justify-center mb-10 -mt-10">
+        <div>
+            <p class="font-body mx-auto text-center p-6 md:text-4xl text-[10px] md:w-[70%] w-[92%]">
+                All chalets has all linen for the beds and the
+                bathroom.  All Chalets share the communal kitchen, lounge and boma.
+            </p>
+            <button @click="scrollDown" class="bg-buttonface md:w-[33%] md:h-[5svh] mx-auto flex items-center justify-center text-center text-4xl rounded-3xl">Enquire Now</button>              
+        </div>
+    </div>
+    <TitleComponent title="Things to do"/>
+    <div class="flex items-center justify-center mb-20">
+        <div class="list-disc">
+            <li class="font-body text-center md:text-3xl font-body text-[10px]" 
+                v-for="(t, index) in thingstodo" :key="index">{{t}}</li>
+        </div>
+    </div>
     <ContactUs/>
 </template>
 
@@ -71,4 +87,30 @@
     import TitleComponent from '../components/TitleComponent.vue';
     import CardComponent from '../components/CardComponent.vue';
     import { ref } from 'vue';
+
+    const scrollDown = () => {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        })
+    }
+</script>
+
+<script>
+    export default {
+        data() {
+            return{
+                thingstodo: [
+                    'Hike to the top of Elandsberg (at Zion)',
+                    'Hike at Rhenosterpoort Waterfall (15km)',
+                    'Fishing (15km)',
+                    'Marakele National Park (75km)',
+                    'Kololo Big 5 Game Drive (50km)',
+                    'Welgevonden Big 5 Game Drive (75km)',
+                    'Horse Riding (30km)',
+                    'Vaalwater Town for restaurants and shopping (50km)'
+                ]
+            }
+        }
+    }
 </script>
