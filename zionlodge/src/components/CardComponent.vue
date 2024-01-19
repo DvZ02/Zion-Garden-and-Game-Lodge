@@ -1,5 +1,5 @@
 <template>
-    <div v-if="colour" class="p-8 bg-ziongreen my-4 md:w-[100%] shadow-md rounded-2xl">
+    <div v-if="colour" class="p-8 bg-ziongreen my-4 md:mx-5 md:w-[100%] shadow-md rounded-2xl">
         <div class="flex items-center justify-center mb-4">
             <h1 class="md:text-[36px] text-[2svh] items-center font-title">{{ title }}</h1>
         </div>
@@ -10,14 +10,26 @@
                         <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
                     </div>
                     <div class="col items-center justify-center flex">
-                        <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                            <div class="list-disc" v-if="bullets">
+                                <li class="font-body md:text-2xl font-semibold text-[10px]" 
+                                    v-for="(b, index) in bullets" :key="index">{{b}}</li>
+                            </div>
+                            <div v-else>
+                                <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                            </div>
                     </div>                    
                 </div>
             </div>   
             <div v-else class="container">
                 <div class="row">
                     <div class="col items-center justify-center flex">
-                        <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                        <div class="list-disc" v-if="bullets">
+                            <li class="font-body md:text-2xl font-semibold text-[10px]" 
+                                v-for="(b, index) in bullets" :key="index">{{b}}</li>
+                        </div>
+                        <div v-else>
+                            <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                        </div>
                     </div>  
                     <div class="col">
                         <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
@@ -37,14 +49,26 @@
                         <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
                     </div>
                     <div class="col items-center justify-center flex">
-                        <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                        <div class="list-disc" v-if="bullets">
+                            <li class="font-body md:text-2xl font-semibold text-[10px]" 
+                                v-for="(b, index) in bullets" :key="index">{{b}}</li>
+                        </div>
+                        <div v-else>
+                            <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                        </div>
                     </div>                    
                 </div>
             </div>   
             <div v-else class="container">
                 <div class="row">
                     <div class="col items-center justify-center flex">
-                        <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                        <div class="list-disc" v-if="bullets">
+                            <li class="font-body md:text-2xl font-semibold text-[10px]" 
+                                v-for="(b, index) in bullets" :key="index">{{b}}</li>
+                        </div>
+                        <div v-else>
+                            <p class="font-body text-center md:text-2xl font-semibold text-[10px]">{{ text }}</p>
+                        </div>
                     </div>  
                     <div class="col">
                         <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
@@ -69,7 +93,8 @@
         },
         text: {
             type: String,
-            require: true
+            require: false,
+            default: null
         },
         allignment: {
             type: Boolean,
@@ -80,6 +105,11 @@
             type: Boolean,
             require: false,
             default: true
+        },
+        bullets: {
+            type: [Array, String],
+            require: false,
+            default: null
         }
     })
 </script>
