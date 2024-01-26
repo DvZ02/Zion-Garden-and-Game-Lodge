@@ -27,14 +27,14 @@
                             <label class="md:w-[38%] mx-auto flex">Contact Number:</label>
                         </div>
                         <div class="flex space-x-4">
-                            <input class="md:w-[40%] mx-auto my-2 p-2 flex" type="text" placeholder="Name">
-                            <input class="md:w-[40%] mx-auto my-2 p-2 flex" type="text" placeholder="Contact Number">
+                            <input class="md:w-[40%] mx-auto my-2 p-2 flex" type="text" placeholder="Name" v-model="from.name">
+                            <input class="md:w-[40%] mx-auto my-2 p-2 flex" type="text" placeholder="Contact Number" v-model="from.contactNumber">
                         </div>
                         <label class="md:w-[88%] mx-auto flex">Email:</label>
-                        <input class="md:w-[90%] mx-auto my-2 p-2 flex" type="text" placeholder="Email">
+                        <input class="md:w-[90%] mx-auto my-2 p-2 flex" type="text" placeholder="Email" v-model="from.email">
                         <label class="md:w-[88%] mx-auto flex">Your Query:</label>
-                        <input class="md:w-[90%] md:h-[11svh] mx-auto my-2 p-2 flex" type="text" placeholder="Your Query">
-                        <button class="bg-buttonface md:w-[33%] md:h-[6svh] mx-auto mt-[3svh] flex items-center justify-center text-center text-4xl rounded-3xl">Submit</button>
+                        <input class="md:w-[90%] md:h-[11svh] mx-auto my-2 p-2 flex" type="text" placeholder="Your Query" v-model="from.query">
+                        <button class="bg-buttonface md:w-[33%] md:h-[6svh] mx-auto mt-[3svh] flex items-center justify-center text-center text-4xl rounded-3xl" @click="submitForm()">Submit</button>
                     </div>
                 </div>
             </div>
@@ -59,5 +59,21 @@
 <script>
     export default {
         name: 'ContactUs',
+        data(){
+            return{
+                from: {
+                    name: '',
+                    contactNumber: '',
+                    email: '',
+                    query: ''
+                }
+            }
+        },
+
+        methods:{
+            submitForm(){
+                console.log(this.from.name)
+            }
+        }
     }
 </script>
