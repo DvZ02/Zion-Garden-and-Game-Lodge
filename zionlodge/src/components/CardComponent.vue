@@ -7,7 +7,7 @@
             <div v-if="allignment" class="container">
                 <div class="row">
                     <div class="col">
-                        <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
+                        <img class="mt-3 md:w-[25svw] object-contain rounded-[7%] mx-auto" :src="image" alt="...">
                     </div>
                     <div class="col items-center justify-center flex">
                             <div class="list-disc" v-if="bullets">
@@ -32,7 +32,7 @@
                         </div>
                     </div>  
                     <div class="col">
-                        <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
+                        <img class="mt-3 md:w-[25svw] object-contain rounded-[7%] mx-auto" :src="image" alt="...">
                     </div>                  
                 </div>
             </div>           
@@ -46,7 +46,7 @@
             <div v-if="allignment" class="container">
                 <div class="row">
                     <div class="col">
-                        <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
+                        <img class="mt-3 md:w-[25svw] object-contain rounded-[7%] mx-auto" :src="image" alt="...">
                     </div>
                     <div class="col items-center justify-center flex">
                         <div class="list-disc" v-if="bullets">
@@ -71,7 +71,7 @@
                         </div>
                     </div>  
                     <div class="col">
-                        <img class="mt-3 md:w-[18svw] rounded-[7%] mx-auto" src="../assets/sunset_1.jpg" alt="...">
+                        <img class="mt-3 md:w-[25svw] object-contain rounded-[7%] mx-auto" :src="image" alt="...">
                     </div>                  
                 </div>
             </div>           
@@ -117,6 +117,12 @@
 <script>
     export default {
         name: 'CardComponent',
+
+        methods: {
+            loadImage(url){
+                return require(`../assets/${url}`)
+            }
+        }
     }
 </script>
 
