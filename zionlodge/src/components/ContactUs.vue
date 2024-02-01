@@ -54,6 +54,7 @@
 
 <script setup>
     import { ref } from 'vue';
+    import axios from 'axios';
 </script>
 
 <script>
@@ -72,7 +73,26 @@
 
         methods:{
             submitForm(){
-                console.log(this.from.name)
+                console.log(this.from.name);
+
+                // Example using Axios
+
+            const formData = {
+            to: 'recipient@example.com',
+            subject: 'Subject of the email',
+            message: 'Body of the email',
+            };
+
+            axios.get('/api', formData)
+            .then(response => {
+                console.log(response.data);
+                // Handle success
+            })
+            .catch(error => {
+                console.error(error);
+                // Handle error
+            });
+
             }
         }
     }
